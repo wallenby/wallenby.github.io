@@ -11,8 +11,10 @@
 </head>
 
 
+
 <body>
     <header>
+        <h5><i>Welcome to </i></h5>
         <h1>Erik's Portfolio</h1>
         
         <nav>
@@ -22,55 +24,227 @@
                 <li><a href="photography.html">Photography</a></li>
                 <li><a href="drawings.html">Drawings</a></li>
             </ul>
-        </nav>
-
-        
+        </nav>        
     </header>
     
+    
     <main>
-        <section id="programming" class="bg-white">
             <h2>Programming</h2>
             <p>Here's where I showcase my coding projects! From A.I. to custom made digital cameras!
                 I love to tinker with different bits of technology while learning, exploring and trying new things :) </p>
+                <br><br>
 
-                <section class="project" id="camera_project">
-                    <h3>Custom Camera Project</h3>
-                    <p> 
-                        I love photography and cameras! I've always been fascinated with the way old and new cameras worked.
-                        I read and learned about all their inner workings on my free team because I was so entriguied as to how 
-                        they worked!
+                <section id="camera_project" class="bg-gray">
+                    <h3>Making my own Camera</h3>
+                    <p> Or at least trying to... 
                         
+                        <br><br>
+                        
+                        I love photography and cameras! I've always been fascinated with the way old and new cameras worked.
+                        I read and learned about all their inner workings on my free time because I was so entriguied as to how they worked!
+                        I had a Nikon 35mm Camera from the 1970s and shooting with it made me fall in love with cameras even more and now I can't be stopped!
                         I'm also a big sucker for making projects with the Raspberry Pi, so when I saw that the Pi foundation made a high
                         quality camera module, I knew what my next big project was gonna be.
                         
-                        I started off by putting the parts I needed together.
-                    <ul>
-
-                        <li> A computer to run everything (the Raspberry Pi 4) </li>
-                        <li> sensor - The HQ Camera Module   </li>
-                        <li>A screen to see what's the sensor is seeing  </li>
-                        <li>A battery, otherwise I'd be limited to indoor usage.  </li>
-                        <li>Buttons to control the screen since bringing a keyboard around to type lines into the terminal wasn't my idea of practical  </li>
-                        <li>A case to hold everything.  </li>
-                      
+                        <br><br>
+                        First step was; Putting the parts I needed together. I needed:
+                       
+                        <ul> 
+                        <br>
+                        <li>A computer - the Raspberry Pi 4! :) </li>
+                        <li>A sensor - The HQ Camera Module   </li>
+                        <li>A Display </li>
+                        <li>A Battery </li>
+                        <li>Buttons for control </li>
+                        <li>A case to hold everything </li>
+                        <li>Some sort of mount for the camera and the lenses</li>
+                        <br>
                     </ul>
                     </p>
-                    <img src="images/camera v0.1.png" alt="Concept">
-                    <img src="images/camera body v1.png" alt="3D Printing v0.1!">
+
+                    <h4> Version 0.1</h4>
+                    <p>
+                        This was the first version of the camera that I put together; I call it, Version 0.1! 
+                        <br><br>
+                        Held togehter by good ol' carboard and hot glue, this was just what I needed to test out my idea.
+                        It served its purpose, and it was able to take pictures and it got me hopeful that this project was do-able, but it was
+                        far from perfect. 1) It didn't have any buttons so I had to bring a keyboard around to type commands into the terminal. 2) 
+                        I couldn't see what I was taking a picture of since I didn't have a GUI 3) It was really awkward to hold and use and so much more :(
+                        <br>
+                    </p>
+
+                    <br>
+                    <img src="images/camera v0.1.png" alt="Concept"><br>
+                    <p><br> So I desperataly needed adress these issues...</p>
+
+                    
+                    <br><br><h4>Version 1 </h4>
+                    <p> 
+                        This was the first design that I 3D printed. It's just a rectangle with screw holes for the sensor and a big hole for the 
+                        components to slide into... It wasn't great, but it was my first design and it got the job done. Except for the NIKON to C-Mount
+                        adapter that I was using; The distance that the sensor sat at made it so that the focus would be a lot closer than it needed to be. 
+                        It was great for macro-photography, but not for the purposes that I needed. With that being said, I included a cool close-up that I 
+                        took of my thumb pressing one of the camera buttons.
+                    </p>
+                    <img src="images/camera body v1.png" alt="3D Printing v1!">
+                    <img src="images/v2_macro.png" alt="v1" class="long">
+                    
+                    <br><br><h4> Version 2</h4>
+                    <p>
+                        This version had a lot of upgrades. First of all, the enclosure was significantly larger and sturdier than the last one. 
+                        This helped with the managing of cables and the strength of the camera body. It also featured a screw hole in the bottom
+                        so that I could mount it to a tripod! 
+                        
+                        <br><br>
+
+                        In addition to that, this new design had the lens mount included which made everything simpler but also way better
+                        for the rigidity of the camera chasis. Since lenses are the heaviest compononent of the camera (at least in this case) 
+                        having the lens mount be built-in to the body made it so that the camera didn't sag towards the front. 
+
+                        <br><br>
+
+                        This version also had the c-mount adapter, so it had the same "issue" as the last version. This is addressed in the 
+                        next design.
+
+                        <br><br>
+
+                    </p>
+                    <img src="images/d2_3d.png" alt="v2">
+                    <img src="images/d2_3d_2.png" alt="v2">
+                    <img src="images/d2_p5.png" alt="v2">
+                    <br>
+                    <img src="images/d2_p4.png" alt="v2">
+                    <img src="images/d2_p1.png" alt="v2">
+                    <img src="images/d2_p2.png" alt="v2">
+                    
+        
+
+                    <br><br><h4> Version 3</h4>
+                    <p> Just finished designing this latest version and it is printed! </p>
+                    <img src="images/d3_p1.png" alt="v3" class="long">
+                    <img src="images/d3_p2.png" alt="v3" class="long">
+
+                    <p>
+                        
+                        I've managed to put the components into the camera body and it functions! It's still not perfect, but 
+                        so far the camera is able to take solid pictures thanks to the 12 megapixel sensor that is being used, and the RAW photos captures 
+                        surprisingly sharp images when paired with a good lens.
+
+                        But there's still some things that need to be fixed/upgraded...
+
+                        <br><br>
+                       
+                        
+                    </p>
+
+                    <img src="images/v3_4.png" alt="v3" >
+                    <img src="images/v3_3.png" alt="v3">
+                    <br>
+                    <img src="images/v3.png" alt="v3">
+                    <img src="images/v3_2.png" alt="v3" >
+
+                    
+
+                    <br><br><h4> What's next? </h4>
+
+                    <p>
+                    There's still lots of work ahead and I will updating the site as progress is made, but here's a run-down of some of things that I'll be looking into next:
+
+                    <br><br>
+                    The camera battery is just a protable USB battery charger that I ripped out of its case and stuck into the camera body, and it'd be better to have
+                    a battery that isn't as yanky.
+
+                    <br><br>
+                    Furthermore, the buttons overlap the case, so the board that holds the buttons needs to be trimmed down.
+
+                    <br><br>
+                    I've also been looking into adding video functionalities, but not just regular video, RAW video! This video format contains significantly higher detail and
+                    information, at the cost of larger file sizes, but that's a sacrifice I think is worth it. The quality of RAW video is spectacular, and I've seen it done with
+                    this sensor, and I've managed to have it work in the past, so that will be a really nice feature to have to make this camera even more well rounded.
+                    
+                    <br><br>
+                    My favourite future addtion I think will be the addition of my Neural Network that identifies wether an image is in focus or not
+                    (that's the project that's after this one on the site!). Using tensorflow lite, I can connect my model to the camera feed and have it let me know wether the 
+                    view is in-focus or out-of-focus!
+
+                    <br><br>
+                    </p>
+
                 </section>
                 
-                <section class="project" id="project2">
+                <section  id="project2" class="bg-white">
                     <h3>Image Focus Recognition and Classification Neural Network </h3>
-                    <p>For this project, I implemented a neural network to...</p>
+                    <p>Photographs are used to capture and record detailed still moments of different scenarios, environments or subjects for a wide variety of 
+                        purposes. For example, taking a high quality picture of a large celestial body, like the moon in order to see and study its craters for 
+                        scientific research, to even capturing microscopic images of tiny micro-organisms to study how they interact with their surrounding 
+                        world, to even just capturing a special moment in a person's life, like a wedding, or a vacation. Regardless of the application of the 
+                        images, it is important to capture as much detail as possible, but this detail can be lost when the image is out-of-focus; Not only that, 
+                        it could also render the image unusable. 
+                        
+                        <br><br>Machine learning has been used in the past not only for binary classification of in- and 
+                        out-of-focus images, but also the classification of different kinds of blur. The goal for this project was to classify images that 
+                        are in-focus and out-of-focus using Neural Networks. This could have useful applications in a camera focusing system, aiding in either 
+                        manually focusing the lens, or having it connected to a motorised focusing system and adjusting focus automatically.
+
+                        <br><br>
+
+                        You can read more about it in my github repo <a href="https://github.com/wallenby/image_focus_recognition_neural_network">here</a>!
+                    </p>
+                </section>
+
+                <section  id="project2" class="bg-gray">
+                    <h3>Neural Network Autoencoder for Styling Images</h3>
+                    <p> 
+                        Ever since I started working with A.I. and Neural Networks, I've been fascinated by different projects I could work on using those
+                        tools, and of course, those ideas were related to photographs. Specifically, 35mm and medium format photos. Film photos have a very 
+                        distinct look to them which gives them a special sort of charm, but it's often difficult to duplicate or replicate this look using
+                        digital cameras; They're just not quite the same. This is where my next idea came into play!
+
+                        <br><br>
+
+                        An auto-encoder that uses a Neural Network to try and learn the pattern present in 35mm and Medium Format photos and that can
+                        apply this look to new digital images! This project is still a work in progress and has proven to be more difficult than expected,
+                        mainly due to the computing power needed to run the Neural Network. My current set up doesn't have enough VRAM for the size
+                        of the images that I need to train, which has caused a couple of hiccups along the way when attempting to put this project together.
+
+                        <br><br>
+
+                        This is still a work in progress, but I'm working on it from time to time and will keep posting updates here!
+
+                    
+                    </p>
+                </section>
+
+                <section  id="project3" class="bg-white">
+                    <h3> Raspberry Pi Stacker LED Game </h3>
+                    <p>A Simple Stacker-like game for the Raspberry Pi!
+
+                        <br><br>
+
+                        The game is similar to the arcade game Stacker, but with some changes.
+
+                        There's no visual stacking, the stacking is more so done with points.
+
+                        There are also lives in the game instead of either missing the stack completely, landing the block partly or landing it right in the middle.
+
+                        <br><br>
+                       
+                    </p>
+                    <img src="images/stacker.png" alt="stacker!"  class="longer">
+                    <img src="images/stacker.gif" alt="stacker!"  class="longer">
+
+                    <p>You can read more about it in my github repo <a href="https://github.com/wallenby/stacker_pi_game">here</a>! </p>
                 </section>
   
-        </section>
+
+        
         
     </main>
+
     <footer>
         <p>Feel free to contact me if you have any questions, suggestions or feedback! :)</p>
         <br>
-        <p> LinkedIn  |  GitHub </p>
+        <p> <a href="https://www.linkedin.com/in/erik-menard-36b30b275/">LinkedIn</a>  |  <a href="https://github.com/wallenby">GitHub</a> </p>
     </footer>
 </body>
 </html>
