@@ -5,6 +5,7 @@ body {
     color: #333;
     text-align: center;
     
+    
 }
 
 header {
@@ -13,6 +14,8 @@ header {
     text-align: center;
     padding: 1em;
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+    z-index: 2;  /* Make this higher than the sidebar's z-index */
+    position: relative;  /* Needed for z-index to work */
 }
 
 .bg-white {
@@ -31,14 +34,14 @@ header {
 
 
 p{     
-    max-width: 800px;  /* Change this to yer likin' */
+    max-width: 750px;  /* Change this to yer likin' */
     margin: auto;  /* This will center the block */
     line-height: 1.5;
     text-align: justify;
 }
 
 ul{
-    max-width: 800px;  /* Change this to yer likin' */
+    max-width: 750px;  /* Change this to yer likin' */
     margin: auto;  /* This will center the block */
     padding-left: 50px;  /* Add some padding to the left */
     list-style-type: square;  /* Change the bullet style */
@@ -106,6 +109,7 @@ nav ul li a {
 
 main {
     padding: 1em;
+    
 }
 
 section {
@@ -145,3 +149,29 @@ iframe {
     width: 100%;
     max-width: 800px;
 }
+
+
+#sidebar {
+    position: fixed;  /* Fixed position */
+    top: 0;  /* Align to the top */
+    left: 0;  /* Align to the left */
+    width: 250px;  /* Set the width */
+    height: 100%;  /* Full height */
+    background-color: #111;  /* Background color */
+    overflow-x: hidden;  /* No horizontal scroll */
+    padding-top: 170px;  /* Add some padding at the top */
+    color: #818181;
+  }
+  
+  #sidebar a {
+    padding: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #c9c9c9;
+    display: block;
+  }
+  
+  #sidebar a:hover {
+    color: #ffffff;  /* Change color on hover */
+  }
+  
