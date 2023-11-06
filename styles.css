@@ -1,23 +1,88 @@
 body {
     font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+    font-size: 95%;
+
     margin: 0;
     padding: 0;
     color: #333;
     text-align: center;
-    
+
     
 }
+
+
+
+
 
 header {
     background-color: #fff;
     color: #333;
     text-align: center;
     padding: 1em;
-    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 3px 10px rgba(49, 49, 49, 0.2);
     z-index: 2;  /* Make this higher than the sidebar's z-index */
     position: relative;  /* Needed for z-index to work */
+
+    width: 100%;
+    z-index: 2; /* Keep it above other content */
 }
 
+
+#site-sections{
+    
+  
+    width: 600px;
+    padding: 25px;
+    
+  
+    background-color: #e0dfdfc4;
+    margin:auto;  /* This will center the block */
+
+    margin-top: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    
+
+    border-radius: 10px;
+
+    color: #000000;
+
+
+
+}
+
+
+    
+#site-sections-a{
+
+    display: block; /* This makes the anchor cover the full section */
+    text-decoration: none; /* This removes the underline from links */
+    color: inherit; /* This keeps the text color consistent */
+    margin-top: 0px;
+    padding-top: 0px;
+    
+}
+
+#site-sections:hover {
+    background-color: #e6e6e69e;  /* Change color on hover */
+  }
+  
+
+#site-sections > h3{
+
+    color: #000000;
+    
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+
+
+
+
+   
 .bg-white {
     background-color: #ffffff;  /* Pure white */
    
@@ -38,6 +103,7 @@ p{
     margin: auto;  /* This will center the block */
     line-height: 1.5;
     text-align: justify;
+
 }
 
 ul{
@@ -50,11 +116,9 @@ ul{
 li{
     text-align: left;
    
-    
 }
 
 h1 {
-    font-family: 'Playfair Display', serif;
     
     margin-top: 5px;  /* Space above the element */
     margin-bottom: 5px;  /* Space below the element */
@@ -62,16 +126,15 @@ h1 {
     padding-right: 10px;  /* Space inside the element, to the right of the text */
     padding-top: 0px;  /* Space inside the element, to the right of the text */
     padding-bottom: 35px;  /* Space inside the element, to the right of the text */
+    font-size: 300%;
+    
 }
 
-h2 {
-    text-align: center;
-    padding-bottom: 15px;  /* Space inside the element, to the right of the text */
-
-}
 
 h1, h2, h3, h5{
-    font-family: 'Playfair Display', serif;
+    font-family: 'Lora', serif;
+    font-weight: 500;
+    
 }
 
 h3{
@@ -145,6 +208,16 @@ img {
     height: 200px;  /* Sets the height */
 }
 
+.tall{
+    width: 300px;  /* Sets the width */
+    height: 350px;  /* Sets the height */
+}
+
+.taller{
+    width: 250px;  /* Sets the width */
+    height: 400px;  /* Sets the height */
+}
+
 iframe {
     width: 100%;
     max-width: 800px;
@@ -160,18 +233,31 @@ iframe {
     background-color: #111;  /* Background color */
     overflow-x: hidden;  /* No horizontal scroll */
     padding-top: 170px;  /* Add some padding at the top */
-    color: #818181;
+    color: #d9d9d9;
+    font-size: larger;
   }
   
-  #sidebar a {
-    padding: 10px;
+#sidebar a {
+    padding: 7px;
+    padding-left: 0px;
     text-decoration: none;
     font-size: 18px;
     color: #c9c9c9;
     display: block;
+    
   }
   
-  #sidebar a:hover {
+#sidebar a:hover {
     color: #ffffff;  /* Change color on hover */
   }
   
+
+
+
+
+/* Now, when the screen size be less than 768 pixels, the sidebar gets the heave-ho! */
+@media (max-width: 1300px) {
+    #sidebar {
+      display: none; /* This will hide the sidebar on screens smaller than 768 pixels */
+    }
+  }
