@@ -1,7 +1,7 @@
 body {
     font-family: 'Raleway', sans-serif;
     font-weight: 100;
-    font-size: 95%;
+    font-size: 115%;
 
     margin: 0;
     padding: 0;
@@ -15,9 +15,10 @@ body {
 
 
 
+
 header {
-    background-color: #fff;
-    color: #333;
+    background-color: #202020;
+    color: #ffffff;
     text-align: center;
     padding: 1em;
     box-shadow: 0px 3px 10px rgba(49, 49, 49, 0.2);
@@ -28,11 +29,20 @@ header {
     z-index: 2; /* Keep it above other content */
 }
 
+header nav ul li a {
+   
+    color: #ffffff;
+    font-size: 115%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
 
 #site-sections{
     
   
-    width: 600px;
+    width: 700px;
     padding: 25px;
     
   
@@ -81,7 +91,10 @@ header {
 
 
 
-
+#caption{
+    font-size: 80%;
+    text-align: center;
+}
    
 .bg-white {
     background-color: #ffffff;  /* Pure white */
@@ -99,7 +112,7 @@ header {
 
 
 p{     
-    max-width: 750px;  /* Change this to yer likin' */
+    max-width: 850px;  /* Change this to yer likin' */
     margin: auto;  /* This will center the block */
     line-height: 1.5;
     text-align: justify;
@@ -131,7 +144,7 @@ h1 {
 }
 
 
-h1, h2, h3, h5{
+h1, h2, h3, h4, h5{
     font-family: 'Lora', serif;
     font-weight: 500;
     
@@ -142,7 +155,7 @@ h3{
 }
 
 h4{
-    padding-bottom: 0px;
+    padding-bottom: -20px;
 }
 
 h5 {
@@ -170,18 +183,16 @@ nav ul li a {
     text-decoration: none;
 }
 
-main {
-    padding: 1em;
-    
-}
+
+
 
 section {
     margin-bottom: 2em;
 }
 
 footer {
-    background-color: #e0dfdf;
-    color: #1c1c1c;
+    background-color: #202020;
+    color: #ffffff;
     text-align: center;
     padding: 1em;
     box-shadow: 0px -3px 10px rgba(0, 0, 0, 0.1);
@@ -192,15 +203,15 @@ footer p { text-align: center; }
 img {
     max-width: 100%;  /* Makes sure the image fits within its container */
     border: 1px solid #333;  /* Adds a border */
-    width: 300px;  /* Sets the width */
-    height: 300px;  /* Sets the height */
+    width: 280px;  /* Sets the width */
+    height: 280px;  /* Sets the height */
     object-fit: cover;  /* Keeps the aspect ratio, but might clip the image */
-    margin:5px;
+    margin:2px;
 }
 
 .long{
-    width: 300px;  /* Sets the width */
-    height: 250px;  /* Sets the height */
+    width: 400px;  /* Sets the width */
+    height: 300px;  /* Sets the height */
 }
 
 .longer{
@@ -255,9 +266,112 @@ iframe {
 
 
 
+
+
+
+
+
 /* Now, when the screen size be less than 768 pixels, the sidebar gets the heave-ho! */
-@media (max-width: 1300px) {
+@media (max-width: 1400px) {
     #sidebar {
       display: none; /* This will hide the sidebar on screens smaller than 768 pixels */
     }
   }
+
+
+.center_p{
+    text-align: center;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#slideshow img{
+   
+
+    margin-top: 0;
+    padding-top: 0;
+    min-width: 600px;
+   
+    max-width: 680px;
+    max-height: 750px;
+
+    height: auto;
+    width: auto;
+}
+#slideshow {
+    position: relative;
+    max-width: 810px; /* Adjust as per your image width */
+    margin: auto;
+    overflow: hidden;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.slide {
+    display: none;
+}
+
+.slide.active {
+    display: block;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    user-select: none;
+    background-color: rgba(0,0,0,0.8);
+    border-radius: 3px;
+
+    width: 30px;
+
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.prev {
+    left: 0px; /* Adjust if necessary */
+}
+
+.next {
+    right: 0px; /* Adjust if necessary */
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,1);
+}
+
+
+.no_purple_link{
+    text-decoration: none;
+    text-align: left;
+    left: 300px;
+    color:#ccc;
+}
+
+
+.no_purple_link:visited {
+    text-decoration: none;
+    text-align: left;
+    left: 300px;
+    color:#ccc;
+}

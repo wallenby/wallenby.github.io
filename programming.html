@@ -34,7 +34,7 @@
     <main>
 
    
-
+            <br>
             <h2>Programming</h2>
             <p>Here's where I showcase my coding projects! From A.I. to custom made digital cameras!
                 I love to tinker with different bits of technology while learning, exploring and trying new things :) </p>
@@ -80,7 +80,7 @@
                     </ul>
                     </p>
 
-                    <h4> Version 0.1</h4>
+                    <h4> ----- Version 0.1 ----- </h4>
                     <p>
                         This was the first version of the camera that I put together; I call it, Version 0.1! 
                         <br><br>
@@ -98,18 +98,25 @@
                     <p><br> So I desperataly needed to adress these issues...</p>
 
                     
-                    <br><br><h4>Version 1 </h4>
+                    <br><br><br>
+                    <h4>----- Version 1 -----</h4>
                     <p> 
                         This was the first design that I 3D printed. It's just a rectangle with screw holes for the sensor and a big hole for the 
-                        components to slide into... It wasn't great, but it was my first design and it got the job done. Except for the NIKON to C-Mount
-                        adapter that I was using; The distance that the sensor sat at made it so that the focus would be a lot closer than it needed to be. 
-                        It was great for macro-photography, but not for the purposes that I needed. With that being said, I included a cool close-up that I 
-                        took of my thumb pressing one of the camera buttons.
-                    </p>
+                        components to slide into. It wasn't great, but it was my first design and it got the job done. This version also included
+                        the first version of the GUI! Using the picamera2 library which was/is still in beta, I put together a lil' program that
+                        allowed me to control the gain, expsoure and white balance of the camera via some buttons on a breadboard which connected
+                        to the pi via the GPIO pins.
+                        <br><br>
+
+                        One big problem in this version was the the NIKON to C-Mount
+                        adapter that I was using; The distance that the sensor sat at relative to the lens was too far and made it so that the focus would be a 
+                        lot closer than it needed to be. It was great for macro-photography, but not for the purposes that I needed. With that being said, I 
+                        included a neat close-up that I took of my thumb pressing the button on a new board that I was working on.
+                    </p><br>
                     <img src="images/camera body v1.jpg" alt="3D Printing v1!">
                     <img src="images/v2_macro.jpg" alt="v1" class="long">
                     
-                    <br><br><h4> Version 2</h4>
+                    <br><br><br><h4> ----- Version 2 -----</h4>
                     <p>
                         This version had a lot of upgrades. First of all, the enclosure was significantly larger and sturdier than the last one. 
                         This helped with the managing of cables and the strength of the camera body. It also featured a screw hole in the bottom
@@ -117,14 +124,15 @@
                         
                         <br><br>
 
-                        In addition to that, this new design had the lens mount included which made everything simpler but also way better
+                        In addition to that, this new design had the lens mount built into the body which made everything simpler but also way better
                         for the rigidity of the camera chasis. Since lenses are the heaviest compononent of the camera (at least in this case) 
-                        having the lens mount be built-in to the body made it so that the camera didn't sag towards the front. 
+                        having the lens mount be built-in to the body made it so that the camera didn't sag towards the front. It also helped a great
+                        deal with the <i>wobbly-ness</i> of the camera. Sturdier body = More secure and stable sensor = Better Images.
 
                         <br><br>
 
-                        This version also had the c-mount adapter, so it had the same "issue" as the last version. This is addressed in the 
-                        next design.
+                        Unfortunately, this version still used the same c-mount adapter, so it had the same issue as the last version where the focus was too close. 
+                        This is addressed in the next design.
 
                         <br><br>
 
@@ -141,21 +149,20 @@
                     
         
 
-                    <br><br><h4> Version 3</h4>
-                    <p> Just finished designing this latest version and it is printed! </p>
+                    <br><br><br><h4> ----- Version 3 -----</h4>
+                    <p> I took a fair bit of time designing this one and I'm pretty happy with how it turned out!</p><br>
                     <img src="images/d3_p1.jpg" alt="v3" class="long">
                     <img src="images/d3_p2.jpg" alt="v3" class="long">
-
+                    <br><br>
                     <p>
                         
-                        I've managed to put the components into the camera body and it functions! It's still not perfect, but 
-                        so far the camera is able to take solid pictures thanks to the 12 megapixel sensor that is being used, and the RAW photos captures 
-                        surprisingly sharp images when paired with a good lens.
+                        The components fit into the camera body and it functions! It's still not perfect, but so far the camera is able to take solid pictures 
+                        thanks to the 12 megapixel sensor that is being used, and the RAW photos captures surprisingly sharp images when paired with a good lens!
 
-                        But there's still some things that need to be fixed/upgraded...
 
                         <br><br>
-                       
+                        You can view some of the photos I've taken with the camere in the <i><a href="photography.html">Photography</a></i> section of the site!
+                        <br><br>
                         
                     </p>
 
@@ -166,10 +173,22 @@
                     <img src="images/pi0_2.jpg" alt="v3" >
 
                     <br><br>
-                    <p>You can view some of the photos I've taken with the camere in the <i><a href="photography.html">Photography</a></i> section of the site!</p>
-
                     
 
+                    <p>
+                        
+                        This version took over a day to print but luckily all the components fit with little to no wiggle room! The battery, Pi, sensor, cables, etc...
+                        all fit snuggly and don't cause any issues. 
+                        
+                    
+                    <br><br>
+                    The lens distance issue was fixed in this revision! I decided to include a mounting solution that
+                    isn't so conventional. I took a NIKON lens mount and put it really close to where the sensor sits, and the goal was to be able to use adapters
+                    so that I can use other lenses as well. In other words, the camera uses a NIKON mount that takes a NIKON mount to ____ adapter so that I can use
+                    Canon, Minolta, Sony, etc... lenses! It also allows me to use longer or shorter adapters for macro photography or whatever I require. 
+
+                    <br><br>
+                </p>
                     <br><br><h4> What's next? </h4>
 
                     <p>
@@ -177,19 +196,23 @@
 
                     <br><br>
                     The camera battery is just a protable USB battery charger that I ripped out of its case and stuck into the camera body, and it'd be better to have
-                    a battery that isn't as yanky.
+                    a battery that isn't as yanky. In order to charge the battery the entire camera has to be taken apart since the battery sits in the middle of the camera body.
 
                     <br><br>
-                    Furthermore, the buttons overlap the case, so the board that holds the buttons needs to be trimmed down.
+                    The buttons overlap the case, so the board that holds the buttons needs to be trimmed down. Also the take photo button needs to be in the top handle part
+                    of the camera so that it's easier to take photos.
 
                     <br><br>
                     I've also been looking into adding video functionalities, but not just regular video, RAW video! This video format contains significantly higher detail and
                     information, at the cost of larger file sizes, but that's a sacrifice I think is worth it. The quality of RAW video is spectacular, and I've seen it done with
-                    this sensor, and I've managed to have it work in the past, so that will be a really nice feature to have to make this camera even more well rounded.
+                    this sensor, and I've managed to have it work in the past, so that will be a really nice feature to have to make this camera more well rounded.
+
+                    <br><br>
+                    Not sure if I'll be implenting RAW video functionality or if I'll just experiment with more regular video formats. I'll see once I do more testing!
                     
                     <br><br>
                     My favourite future addtion I think will be the addition of my Neural Network that identifies wether an image is in focus or not
-                    (that's the project that's after this one on the site!). Using tensorflow lite, I can connect my model to the camera feed and have it let me know wether the 
+                    <i>(that's the project that's after this one on the site!)</i>. Using tensorflow lite, I can connect my model to the camera feed and have it let me know wether the 
                     view is in-focus or out-of-focus!
 
                     <br><br>
@@ -215,13 +238,13 @@
 
                         <br><br>
 
-                        <p> I've also made a demonstartion of me using the Neural Network in this youtube video!</p>
+                        <p> I've also made a demonstartion of me using the Neural Network in this youtube video!</p><br>
                         <iframe width="800" height="480" src="https://www.youtube.com/embed/P0aj57Yiu9E?si=6USyJp4LE7JDH7-g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-                        <br><br>
+                        <br><br><br>
 
 
-                        You can read more about it in my github repo <a href="https://github.com/wallenby/image_focus_recognition_neural_network">here</a>!
+                        You can read more about this project in my github repo <a href="https://github.com/wallenby/image_focus_recognition_neural_network">HERE</a>!
                     </p>
                 </section>
 
@@ -266,7 +289,7 @@
                     <img src="images/stacker.jpg" alt="stacker!"  class="longer">
                     <img src="images/stacker.gif" alt="stacker!"  class="longer">
 
-                    <p>You can read more about it in my github repo <a href="https://github.com/wallenby/stacker_pi_game">here</a>! </p>
+                    <p class="center_p">You can read more about it in my github repo <a href="https://github.com/wallenby/stacker_pi_game">here</a>! </p>
                 </section>
   
 
@@ -276,8 +299,13 @@
 
     <footer>
         <p>Feel free to contact me if you have any questions, suggestions or feedback! :)</p>
-        <br>
-        <p> <a href="https://www.linkedin.com/in/erik-menard-36b30b275/">LinkedIn</a>  |  <a href="https://github.com/wallenby">GitHub</a> </p>
-    </footer>
+        <br><br>
+        <p> 
+           <a class="no_purple_link" href="https://www.linkedin.com/in/erik-menard-36b30b275/">LinkedIn</a>
+           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+           <a class="no_purple_link" href="https://github.com/wallenby">GitHub</a> 
+        </p> 
+       <br>
+   </footer>
 </body>
 </html>

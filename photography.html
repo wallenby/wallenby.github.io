@@ -28,28 +28,60 @@
         
     </header>
     <main>
-        
+        <br>
         <h2>Photography</h2>
             <p>I love slowing down and looking at things more deeply through camera lenses. This includes landscapes, scenes, people and even the moon! </p>
             <br><br>
-            
-            <section id="photography" class="bg-gray">
+  
+
+
+            <section id="pi_photography" class="bg-gray">
+                
                 <h3>Shot on Pi</h3>
-                <p>Below are the pictures I've taken using the Pi Camera that I put together! :)</p>
-           
-            <img src="images/pi3.jpg" >
-            <img src="images/pi4.jpg" >
-            <img src="images/pi5.jpg" >
-            <br>
-            <img src="images/pi1.jpg" class="tall">
-            <img src="images/pi7.jpg" class="tall">
-            <img src="images/pi2.jpg" class="tall">
-            <br>
-            <img src="images/pi6.jpg" >
-            <img src="images/pi10.jpg" >
-            <img src="images/pi9.jpg" >
+                <p class="center_p">Below are the pictures I've taken using the Pi Camera that I put together! :)</p>
+                <br> 
+ 
+             <div id="slideshow" >
+                 <div class="slide_1">
+                    <img src="images/pi3.jpg" >
+                 </div>
+                 <div class="slide_1">
+                    <img src="images/pi4.jpg" >
+                 </div>
+                 <div class="slide_1">
+                    <img src="images/pi5.jpg" >
+                 </div>
+                 <div class="slide_1">
+                    <img src="images/pi1.jpg" >
+                 </div>
+                 <div class="slide_1">
+                    <img src="images/pi7.jpg" >
+                 </div>
+                 <div class="slide_1">
+                    <img src="images/pi2.jpg" >
+                 </div>
+                 <div class="slide_1">
+                    <img src="images/pi6.jpg" >
+                 </div>
+                 <div class="slide_1">
+                    <img src="images/pi10.jpg" >
+                 </div>
+                 <div class="slide_1">
+                    <img src="images/pi9.jpg" >
+                 </div>
+                 <!-- Add more slides as needed -->
+                 <br>
+                 <a class="prev" onclick="moveSlide_1(-1)">&#10094;</a>
+                 <a class="next" onclick="moveSlide_1(1)">&#10095;</a>
+                 <br>
+             </div>
+
+             <script src="script_pi_slide.js"> 
+            </script>
 
             </section>
+
+
 
 
             <section id="photography" class="bg-white">
@@ -64,27 +96,195 @@
                     
                     
                 </p>
-                <img src="images/moon oct 2.jpg" alt="Moon!" caption="hey">
+                <img src="images/moon1.jpg" alt="Moon!" caption="hey">
+                <img src="images/moon2.jpg" alt="Moon!" caption="hey">
+                <br>
                 <img src="images/jupiter.jpg" alt="Jupiter">
                 <br>
-                <i>Waning Gibbous Moon (left) and Jupiter (right)  </i>                  
+                <p id="caption"><i>Waning Gibbous Moon + Full Moon (top) and Jupiter (bottom)  </i></p>                  
             </section>
             
-            <section id="photography" class="bg-gray">
+
+
+          
+            <section id="film_photography" class="bg-gray">
+                
+                <h3>Film Photos!</h3>
+                <p> I love film! So far I've only used 35mm film and I LOVE IT!
+                    So here are some of my favourite photos taken on film, divided into Black & White and Colour </p>
+                <br><br>
+            <h4>Black and White Film</h4>
+             <div id="slideshow" >
+                 <div class="slide_bw">
+                    <img src="images/film1.jpg" >
+                 </div>
+                 <div class="slide_bw">
+                    <img src="images/film2.jpg" >
+                 </div>
+                 <div class="slide_bw">
+                    <img src="images/film3.jpg" >
+                 </div>
+                 <div class="slide_bw">
+                    <img src="images/film4.jpg" >
+                 </div>
+                 <div class="slide_bw">
+                    <img src="images/film5.jpg" >
+                 </div>
+                 <div class="slide_bw">
+                    <img src="images/film6.jpg" >
+                 </div>
+                 <div class="slide_bw">
+                    <img src="images/film7.jpg" >
+                 </div>
+                 <div class="slide_bw">
+                    <img src="images/film8.jpg" >
+                 </div>
+                 <div class="slide_bw">
+                    <img src="images/film9.jpg" >
+                 </div>
+                 <div class="slide_bw">
+                    <img src="images/film10.jpg" >
+                 </div>
+                 <!-- Add more slides as needed -->
+                 <br>
+                 <a class="prev" onclick="moveSlide_2(-1)">&#10094;</a>
+                 <a class="next" onclick="moveSlide_2(1)">&#10095;</a>
+                 <br>
+             </div>
+             <br>
+
+             <h4>Colour Film</h4>
+             <div id="slideshow" >
+                <div class="slide_color">
+                   <img src="images/color_film1.jpg" >
+                </div>
+                <div class="slide_color">
+                   <img src="images/color_film2.jpg" >
+                </div>
+                <div class="slide_color">
+                   <img src="images/color_film3.jpg" >
+                </div>
+                <div class="slide_color">
+                   <img src="images/color_film4.jpg" >
+                </div>
+                <div class="slide_color">
+                   <img src="images/color_film5.jpg" >
+                </div>
+                <div class="slide_color">
+                   <img src="images/color_film6.jpg" >
+                </div>
+                <div class="slide_color">
+                   <img src="images/color_film7.jpg" >
+                </div>
+                <div class="slide_color">
+                   <img src="images/color_film8.jpg" >
+                </div>
+                <div class="slide_color">
+                   <img src="images/color_film9.jpg" >
+                </div>
+                <div class="slide_color">
+                   <img src="images/color_film10.jpg" >
+                </div>
+
+                <div class="slide_color">
+                  <img src="images/color_film11.jpg" >
+               </div>
+               <div class="slide_color">
+                  <img src="images/color_film12.jpg" >
+               </div>
+               <div class="slide_color">
+                  <img src="images/color_film13.jpg" >
+               </div>
+               <div class="slide_color">
+                  <img src="images/color_film14.jpg" >
+               </div>
+               <div class="slide_color">
+                  <img src="images/color_film15.jpg" >
+               </div>
+               <div class="slide_color">
+                  <img src="images/color_film16.jpg" >
+               </div>
+               <div class="slide_color">
+                  <img src="images/color_film17.jpg" >
+               </div>
+               <div class="slide_color">
+                  <img src="images/color_film18.jpg" >
+               </div>
+               <div class="slide_color">
+                  <img src="images/color_film19.jpg" >
+               </div>
+               <div class="slide_color">
+                  <img src="images/color_film20.jpg" >
+               </div>
+               <div class="slide_color">
+                  <img src="images/color_film21.jpg" >
+               </div>
+                <!-- Add more slides as needed -->
+                <br>
+                <a class="prev" onclick="moveSlide_3(-1)">&#10094;</a>
+                <a class="next" onclick="moveSlide_3(1)">&#10095;</a>
+                <br>
+            </div>
+
+             <script src="script_film_bw.js"> </script>
+             <script src="script_film_color.js"> </script>
+            
+            </section>
+
+
+
+            
+            <section id="photography" class="bg-white">
+
                 <h3>Other-Photography</h3>
-            <img src="images/house.jpg" alt="Cozy Cabin in the Fall" class="taller">
-            <img src="images/smoky day.jpg" alt="smoky day" class="taller">
+    
+               <br> 
             
-            <img src="images/mushroom.jpg" alt="mushroom :)" class="taller">
+                <div id="slideshow" >
+                    <div class="slide">
+                        <img src="images/photo1.jpg" alt="Image 1">
+                    </div>
+                    <div class="slide">
+                        <img src="images/photo2.jpg" alt="Image 2">
+                    </div>
+                    <div class="slide">
+                        <img src="images/photo3.jpg" alt="Image 3">
+                    </div>
+                    <div class="slide">
+                        <img src="images/photo4.jpg" alt="Image 4">
+                    </div>
+                    <!-- Add more slides as needed -->
+                    <br>
+                    <a class="prev" onclick="moveSlide(-1)">&#10094;</a>
+                    <a class="next" onclick="moveSlide(1)">&#10095;</a>
+                    <br>
+                </div>
+
+                <br>
+                <script src="script.js"></script>
+
+
             </section>
-        
+
+
+
+
+
+
+
         
         
     </main>
+
     <footer>
-        <p>Feel free to contact me if you have any questions, suggestions or feedback! :)</p>
+         <p>Feel free to contact me if you have any questions, suggestions or feedback! :)</p>
+         <br><br>
+         <p> 
+            <a class="no_purple_link" href="https://www.linkedin.com/in/erik-menard-36b30b275/">LinkedIn</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a class="no_purple_link" href="https://github.com/wallenby">GitHub</a> 
+         </p> 
         <br>
-        <p> <a href="https://www.linkedin.com/in/erik-menard-36b30b275/">LinkedIn</a>  |  <a href="https://github.com/wallenby">GitHub</a> </p>
     </footer>
 </body>
 </html>
