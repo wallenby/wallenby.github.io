@@ -18,3 +18,13 @@ function showSlides(n) {
 }
 
 
+
+
+function showSmallSlides(n) {
+    let smallSlides = document.getElementsByClassName("small-slide");
+    for (let i = 0; i < smallSlides.length; i++) {
+        smallSlides[i].style.display = "none";
+    }
+    // Show the appropriate small slide(s) based on 'n'
+    // You can use a similar logic as your existing slideshow
+}

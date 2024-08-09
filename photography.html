@@ -12,22 +12,10 @@
 
 
 <body>
-    <header>
-        <h5><i>Welcome to </i></h5>
-        <h1>Erik's Portfolio</h1>
-        
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="programming.html">Programming</a></li>
-                <li><a href="photography.html">Photography</a></li>
-                <li><a href="drawings.html">Drawings</a></li>
-            </ul>
-        </nav>
+   <div id="header"></div>
 
-        
-    </header>
-    <main>
+
+   <main>
         <br>
         <h2>Photography</h2>
             <p>I love slowing down and looking at things more deeply through camera lenses. This includes landscapes, scenes, people and even the moon! </p>
@@ -76,7 +64,12 @@
                   <br>
                </div>
 
+
+              
+
                <script src="script_pi_slide.js"></script>
+
+               
 
             </section>
 
@@ -95,12 +88,30 @@
                     
                     
                 </p>
+                <img src="images/halfmoon.jpg" alt="Moon!" caption="hey" class="large-photo">
+                
                 <img src="images/moon1.jpg" alt="Moon!" caption="hey" class="large-photo">
-                <img src="images/moon2.jpg" alt="Moon!" caption="hey" class="large-photo">
                 <br>
+                <img src="images/moon2.jpg" alt="Moon!" caption="hey" class="large-photo">
+                
                 <img src="images/jupiter.jpg" alt="Jupiter" class="large-photo">
                 <br>
-                <p id="caption"><i>Waning Gibbous Moon + Full Moon (top) and Jupiter (bottom)  </i></p>                  
+                <p id="caption"><i>First Quarter + Waning Gibbous Moon (top)
+                  <br>
+                  Full Moon + Jupiter (bottom)  </i></p>                  
+
+                <br><br>
+
+               <h4> Photos from the eclipse!!</h4>            
+                <img src="images/eclipse1.jpg" alt="Moon!" caption="hey" class="larger-photo">
+                <br>
+                <img src="images/eclipse3.jpg" alt="Moon!" caption="hey" class="large-photo">
+                <img src="images/eclipse4.jpg" alt="Moon!" caption="hey" class="large-photo">
+                <br>
+                <img src="images/eclipse5.jpg" alt="Moon!" caption="hey" class="large-photo">
+                <img src="images/eclipse6.jpg" alt="Moon!" caption="hey" class="large-photo">
+                <br>
+
             </section>
             
 
@@ -239,25 +250,29 @@
     
                <br> 
             
-                <div id="slideshow" >
-                    <div class="slide">
-                        <img src="images/photo1.jpg" alt="Image 1">
-                    </div>
-                    <div class="slide">
-                        <img src="images/photo2.jpg" alt="Image 2">
-                    </div>
-                    <div class="slide">
-                        <img src="images/photo3.jpg" alt="Image 3">
-                    </div>
-                    <div class="slide">
-                        <img src="images/photo4.jpg" alt="Image 4">
-                    </div>
+                
+                
+               <br>
+               <img src="images/canal_bridge.jpg" alt="Image 5" class="larger-photo">
+               <br>
+               <img src="images/night_scene.jpg" alt="Image 6" class="larger-photo">
+               <br>
+               <img src="images/old_building.jpg" alt="Image 6" class="larger-photo">
+               <br>
+               <img src="images/building_through_trees.jpg" alt="Image 7" class="tallest">
+               <img src="images/oldie_stairs.jpg" alt="Image 7" class="tallest">
+               <br>
+               <img src="images/photo1.jpg" alt="Image 1">
+               
+               <img src="images/photo2.jpg" alt="Image 2">
+               <br>
+               <img src="images/photo3.jpg" alt="Image 3">
+               <img src="images/photo4.jpg" alt="Image 4">
+        
+
                     <!-- Add more slides as needed -->
+                  <br>
                     <br>
-                    <a class="prev" onclick="moveSlide(-1)">&#10094;</a>
-                    <a class="next" onclick="moveSlide(1)">&#10095;</a>
-                    <br>
-                </div>
 
                 <br>
                 <script src="script.js"></script>
@@ -275,15 +290,24 @@
         
     </main>
 
-    <footer>
-         <p>Feel free to contact me if you have any questions, suggestions or feedback! :)</p>
-         <br><br>
-         <p> 
-            <a class="no_purple_link" href="https://www.linkedin.com/in/erik-menard-36b30b275/">LinkedIn</a>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a class="no_purple_link" href="https://github.com/wallenby">GitHub</a> 
-         </p> 
-        <br>
-    </footer>
+    <div id="footer"></div>
+
+    <script>
+
+        fetch('header.html')
+        .then(response => response.text())
+        .then(data => {
+        document.getElementById("header").innerHTML = data;
+        })
+        .catch(error => console.log('Error loading header:', error));
+
+
+        fetch('footer.html')
+        .then(response => response.text())
+        .then(data => {
+        document.getElementById("footer").innerHTML = data;
+        })
+        .catch(error => console.log('Error loading footer:', error));
+    </script>
 </body>
 </html>

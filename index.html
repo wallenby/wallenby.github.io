@@ -7,27 +7,15 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Arsenal&family=Lora&family=Noto+Serif&family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Mate:ital@0;1&display=swap" rel="stylesheet"></head>
+
 </head>
-
-
 <body>
-    <header>
-        <h5><i>Welcome to </i></h5>
-        <h1>Erik's Portfolio</h1>
-        
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="programming.html">Programming</a></li>
-                <li><a href="photography.html">Photography</a></li>
-                <li><a href="drawings.html">Drawings</a></li>
-            </ul>
-        </nav>        
-    </header>
 
-    <main>
-        <section id="about_me">
+    <div id="header"></div>
+
+    <main class="bg-white">
+        <section id="about_me" >
 
             <br>
             <h2>About Me</h2>
@@ -37,7 +25,7 @@
                 In this portfolio I've included my favourite projects that I've worked on, and I've divided them into 3 categories: 
                 Programming, Photography and Drawings
 
-                <br><br><br>
+                <br><br>
             </p>
             
 
@@ -47,8 +35,8 @@
                 
                     <h3>Programming</h3>
                     <p>
-                    The programming section includes all my Programming/Computer/Tech related projects which I've been working on! This includes my project for building
-                    my own camera, designing Neural Networks for different tasks and some other fun projects that I've made! 
+                    Programming / Computer / Tech related projects which I've been working on! 
+                    Projects include, building my own camera, designing Neural Networks for different tasks and more!
                     </p>
                 </section><br>
                
@@ -60,7 +48,7 @@
     
                     <h3>Photography</h3>
                     <p>
-                    Here I've posted some of my favourite photos which I've taken! There's some astro-photography as well as some landscape photos!
+                    Astro-photography, Landscapes, 35mm film and some stuff from my custom camera!
                     </p>
                 </section><br>
                 </a>
@@ -70,26 +58,36 @@
                 <section id="site-sections">
                     <h3>Drawings</h3>
                     <p>
-                    I like to doodle on my free time and I figured I'd include some of my favourite doodles heres! :)
+                    Some of my favourite doodles :)
                     </p>
                 </section>
                 </a>
         </section>
 
-        <br><br><br><br><br><br>
+        <br><br>
 
     </main>
 
-    
-    <footer>
-        <p>Feel free to contact me if you have any questions, suggestions or feedback! :)</p>
-        <br><br>
-        <p> 
-           <a class="no_purple_link" href="https://www.linkedin.com/in/erik-menard-36b30b275/">LinkedIn</a>
-           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-           <a class="no_purple_link" href="https://github.com/wallenby">GitHub</a> 
-        </p> 
-       <br>
-   </footer>
+
+    <div id="footer"></div>
+
+    <script>
+
+        fetch('header.html')
+        .then(response => response.text())
+        .then(data => {
+        document.getElementById("header").innerHTML = data;
+        })
+        .catch(error => console.log('Error loading header:', error));
+
+
+        fetch('footer.html')
+        .then(response => response.text())
+        .then(data => {
+        document.getElementById("footer").innerHTML = data;
+        })
+        .catch(error => console.log('Error loading footer:', error));
+    </script>
+
 </body>
 </html>
