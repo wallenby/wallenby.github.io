@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Erik's Portfolio</title>
+    <link rel="icon" href="images/favicon.png" type="image/png">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arsenal&family=Lora&family=Raleway&display=swap" rel="stylesheet">
+
+</head>
+
+
+<body>
+   <div id="header"></div>
+
+
+   <main class="bg-white">
+       
+
+
+          
+            <section id="film_photography" >
+                
+                <h3>Film Photos!</h3>
+                <p> I love film! So far I've only used 35mm film and I LOVE IT!
+                    So here are some of my favourite photos taken on film, divided into Black & White and Colour </p>
+                <br><br>
+            <h4>Black and White Film</h4>
+             <div id="slideshow" >
+                 <div class="slide_bw">
+                    <img src="images/film1.jpg" >
+                 </div>
+                 <div class="slide_bw">
+                    <img src="images/film2.jpg" >
+                 </div>
+                 <div class="slide_bw">
+                    <img src="images/film3.jpg" >
+                 </div>
+                 <div class="slide_bw">
+                    <img src="images/film4.jpg" >
+                 </div>
+                 <div class="slide_bw">
+                    <img src="images/film5.jpg" >
+                 </div>
+                 <div class="slide_bw">
+                    <img src="images/film6.jpg" >
+                 </div>
+                 <div class="slide_bw">
+                    <img src="images/film7.jpg" >
+                 </div>
+                 <div class="slide_bw">
+                    <img src="images/film8.jpg" >
+                 </div>
+                 <div class="slide_bw">
+                    <img src="images/film9.jpg" >
+                 </div>
+                 <div class="slide_bw">
+                    <img src="images/film10.jpg" >
+                 </div>
+                 <!-- Add more slides as needed -->
+                 <br>
+                 <a class="prev" onclick="moveSlide_2(-1)">&#10094;</a>
+                 <a class="next" onclick="moveSlide_2(1)">&#10095;</a>
+                 <br>
+             </div>
+             <br>
+
+             <h4>Colour Film</h4>
+             <div id="slideshow" >
+                <div class="slide_color">
+                   <img src="images/color_film1.jpg" >
+                </div>
+                <div class="slide_color">
+                   <img src="images/color_film2.jpg" >
+                </div>
+                <div class="slide_color">
+                   <img src="images/color_film3.jpg" >
+                </div>
+                <div class="slide_color">
+                   <img src="images/color_film4.jpg" >
+                </div>
+                <div class="slide_color">
+                   <img src="images/color_film5.jpg" >
+                </div>
+                <div class="slide_color">
+                   <img src="images/color_film6.jpg" >
+                </div>
+                <div class="slide_color">
+                   <img src="images/color_film7.jpg" >
+                </div>
+                <div class="slide_color">
+                   <img src="images/color_film8.jpg" >
+                </div>
+                <div class="slide_color">
+                   <img src="images/color_film9.jpg" >
+                </div>
+                <div class="slide_color">
+                   <img src="images/color_film10.jpg" >
+                </div>
+
+                <div class="slide_color">
+                  <img src="images/color_film11.jpg" >
+               </div>
+               <div class="slide_color">
+                  <img src="images/color_film12.jpg" >
+               </div>
+               <div class="slide_color">
+                  <img src="images/color_film13.jpg" >
+               </div>
+               <div class="slide_color">
+                  <img src="images/color_film14.jpg" >
+               </div>
+               <div class="slide_color">
+                  <img src="images/color_film15.jpg" >
+               </div>
+               <div class="slide_color">
+                  <img src="images/color_film16.jpg" >
+               </div>
+               <div class="slide_color">
+                  <img src="images/color_film17.jpg" >
+               </div>
+               <div class="slide_color">
+                  <img src="images/color_film18.jpg" >
+               </div>
+               <div class="slide_color">
+                  <img src="images/color_film19.jpg" >
+               </div>
+               <div class="slide_color">
+                  <img src="images/color_film20.jpg" >
+               </div>
+               <div class="slide_color">
+                  <img src="images/color_film21.jpg" >
+               </div>
+                <!-- Add more slides as needed -->
+                <br>
+                <a class="prev" onclick="moveSlide_3(-1)">&#10094;</a>
+                <a class="next" onclick="moveSlide_3(1)">&#10095;</a>
+                <br>
+            </div>
+
+             <script src="script_film_bw.js"> </script>
+             <script src="script_film_color.js"> </script>
+            
+            </section>
+
+    </main>
+
+
+    <div id="footer"></div>
+    <script>
+
+        fetch('header.html')
+        .then(response => response.text())
+        .then(data => {
+        document.getElementById("header").innerHTML = data;
+        })
+        .catch(error => console.log('Error loading header:', error));
+
+
+        fetch('footer.html')
+        .then(response => response.text())
+        .then(data => {
+        document.getElementById("footer").innerHTML = data;
+        })
+        .catch(error => console.log('Error loading footer:', error));
+    </script>
+    
+</body>
+</html>

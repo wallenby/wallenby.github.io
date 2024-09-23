@@ -1,291 +1,85 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Erik's Portfolio</title>
     <link rel="icon" href="images/favicon.png" type="image/png">
+    <title>Erik's Portfolio</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Arsenal&family=Lora&family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Mate:ital@0;1&display=swap" rel="stylesheet"></head>
 
 </head>
-
-
-
 <body>
+
     <div id="header"></div>
 
-
     <main class="bg-white">
-
+        <section id="about_me" >
 
             <br>
             <h2>Programming</h2>
+
+
             <p>Here's where I showcase my coding projects! From A.I. to custom made digital cameras!
                 I love to tinker with different bits of technology while learning, exploring and trying new things :) </p>
                 <br><br>
-
-                <div id="sidebar">
-                    <h3><br>Programming <br>Projects:</h3>
-                    <ul>
-                      <li><a href="#project1">Custom Camera</a></li>
-                      <li><a href="#project2">Image Classification Neural Network</a></li>
-                      <li><a href="#project3">Neural Network Autoencoder</a></li>
-                      <li><a href="#project4">LED Pi Game</a></li>
-                      <!-- Add more as needed -->
-                    </ul>
-                  </div>
-
-                <section id="project1" class="bg-gray">
-                    <h3>Making my own Camera</h3>
-                    <br><br>
-                    <p> Or at least trying to... 
-                        
-                        <br><br><br>
-                        
-                        I love photography and cameras! I've always been fascinated with the way old and new cameras worked.
-                        I read and learned about all their inner workings on my free time because I was so entriguied as to how they worked!
-                        I had a Nikon 35mm Camera from the 1970s and shooting with it made me fall in love with cameras even more and now I can't be stopped!
-                        I'm also a big sucker for making projects with the Raspberry Pi, so when I saw that the Pi foundation made a high
-                        quality camera module, I knew what my next big project was gonna be.
-                        
-                        <br><br>
-                        First step was; Putting the parts I needed together. I needed:
-                       
-                        <ul> 
-                        <br>
-                        <li>A computer - the Raspberry Pi 4! :) </li>
-                        <li>A sensor - The HQ Camera Module   </li>
-                        <li>A Display </li>
-                        <li>A Battery </li>
-                        <li>Buttons for control </li>
-                        <li>A case to hold everything </li>
-                        <li>Some sort of mount for the camera and the lenses</li>
-                        <br>
-                    </ul>
-                    </p>
-
-                    <h4> ----- Version 0.1 ----- </h4>
-                    <p>
-                        This was the first version of the camera that I put together; I call it, Version 0.1! 
-                        <br><br>
-                        Held togehter by good ol' carboard and hot glue, this was just what I needed to test out my idea.
-                        It served its purpose, and it was able to take pictures and it got me hopeful that this project was do-able, but it was
-                        far from perfect. 1) It didn't have any buttons so I had to bring a keyboard around to type commands into the terminal. 2) 
-                        I couldn't see what I was taking a picture of since I didn't have a GUI 3) It was really awkward to hold and use and so much more :(
-                        <br>
-                    </p>
-
-                    <br>
-                    <img src="images/camera v0.1.jpg" alt="Concept">
-                    <img src="images/camera v0.1_2.jpg" alt="Concept">
-                    <br>
-                    <p><br> So I desperataly needed to adress these issues...</p>
-
-                    
-                    <br><br><br>
-                    <h4>----- Version 1 -----</h4>
-                    <p> 
-                        This was the first design that I 3D printed. It's just a rectangle with screw holes for the sensor and a big hole for the 
-                        components to slide into. It wasn't great, but it was my first design and it got the job done. This version also included
-                        the first version of the GUI! Using the picamera2 library which was/is still in beta, I put together a lil' program that
-                        allowed me to control the gain, expsoure and white balance of the camera via some buttons on a breadboard which connected
-                        to the pi via the GPIO pins.
-                        <br><br>
-
-                        One big problem in this version was the the NIKON to C-Mount
-                        adapter that I was using; The distance that the sensor sat at relative to the lens was too far and made it so that the focus would be a 
-                        lot closer than it needed to be. It was great for macro-photography, but not for the purposes that I needed. With that being said, I 
-                        included a neat close-up that I took of my thumb pressing the button on a new board that I was working on.
-                    </p><br>
-                    <img src="images/camera body v1.jpg" alt="3D Printing v1!">
-                    <img src="images/v2_macro.jpg" alt="v1" class="long">
-                    
-                    <br><br><br><h4> ----- Version 2 -----</h4>
-                    <p>
-                        This version had a lot of upgrades. First of all, the enclosure was significantly larger and sturdier than the last one. 
-                        This helped with the managing of cables and the strength of the camera body. It also featured a screw hole in the bottom
-                        so that I could mount it to a tripod! 
-                        
-                        <br><br>
-
-                        In addition to that, this new design had the lens mount built into the body which made everything simpler but also way better
-                        for the rigidity of the camera chasis. Since lenses are the heaviest compononent of the camera (at least in this case) 
-                        having the lens mount be built-in to the body made it so that the camera didn't sag towards the front. It also helped a great
-                        deal with the <i>wobbly-ness</i> of the camera. Sturdier body = More secure and stable sensor = Better Images.
-
-                        <br><br>
-
-                        Unfortunately, this version still used the same c-mount adapter, so it had the same issue as the last version where the focus was too close. 
-                        This is addressed in the next design.
-
-                        <br><br>
-
-                    </p>
-                    <img src="images/d2_3d.jpg" alt="v2">
-                    <img src="images/d2_3d_2.jpg" alt="v2">
-
-                    <br>
-                    <img src="images/d2_p5.jpg" alt="v2">
-                    <img src="images/d2_p4.jpg" alt="v2">
-                    <br>
-                    <img src="images/d2_p1.jpg" alt="v2">
-                    <img src="images/d2_p2.jpg" alt="v2">
-                    
-        
-
-                    <br><br><br><h4> ----- Version 3 -----</h4>
-                    <p> I took a fair bit of time designing this one and I'm pretty happy with how it turned out!</p><br>
-                    <img src="images/d3_p1.jpg" alt="v3" class="long">
-                    <img src="images/d3_p2.jpg" alt="v3" class="long">
-                    <br><br>
-                    <p>
-                        
-                        The components fit into the camera body and it functions! It's still not perfect, but so far the camera is able to take solid pictures 
-                        thanks to the 12 megapixel sensor that is being used, and the RAW photos captures surprisingly sharp images when paired with a good lens!
-
-
-                        <br><br>
-                        You can view some of the photos I've taken with the camere in the <i><a href="photography.html">Photography</a></i> section of the site!
-                        <br><br>
-                        
-                    </p>
-
-                    <img src="images/v3_4.jpg" alt="v3" >
-                    <img src="images/v3_3.jpg" alt="v3">
-                    <br>
-                    <img src="images/pi0_1.jpg" alt="v3">
-                    <img src="images/pi0_2.jpg" alt="v3" >
-
-                    <br><br>
-                    
-
-                    <p>
-                        
-                        This version took over a day to print but luckily all the components fit with little to no wiggle room! The battery, Pi, sensor, cables, etc...
-                        all fit snuggly and don't cause any issues. 
-                        
-                    
-                    <br><br>
-                    The lens distance issue was fixed in this revision! I decided to include a mounting solution that
-                    isn't so conventional. I took a NIKON lens mount and put it really close to where the sensor sits, and the goal was to be able to use adapters
-                    so that I can use other lenses as well. In other words, the camera uses a NIKON mount that takes a NIKON mount to ____ adapter so that I can use
-                    Canon, Minolta, Sony, etc... lenses! It also allows me to use longer or shorter adapters for macro photography or whatever I require. 
-
-                    <br><br>
-                </p>
-                    <br><br><h4> What's next? </h4>
-
-                    <p>
-                    There's still lots of work ahead and I will updating the site as progress is made, but here's a run-down of some of things that I'll be looking into next:
-
-                    <br><br>
-                    The camera battery is just a protable USB battery charger that I ripped out of its case and stuck into the camera body, and it'd be better to have
-                    a battery that isn't as yanky. In order to charge the battery the entire camera has to be taken apart since the battery sits in the middle of the camera body.
-
-                    <br><br>
-                    The buttons overlap the case, so the board that holds the buttons needs to be trimmed down. Also the take photo button needs to be in the top handle part
-                    of the camera so that it's easier to take photos.
-
-                    <br><br>
-                    I've also been looking into adding video functionalities, but not just regular video, RAW video! This video format contains significantly higher detail and
-                    information, at the cost of larger file sizes, but that's a sacrifice I think is worth it. The quality of RAW video is spectacular, and I've seen it done with
-                    this sensor, and I've managed to have it work in the past, so that will be a really nice feature to have to make this camera more well rounded.
-
-                    <br><br>
-                    Not sure if I'll be implenting RAW video functionality or if I'll just experiment with more regular video formats. I'll see once I do more testing!
-                    
-                    <br><br>
-                    My favourite future addtion I think will be the addition of my Neural Network that identifies wether an image is in focus or not
-                    <i>(that's the project that's after this one on the site!)</i>. Using tensorflow lite, I can connect my model to the camera feed and have it let me know wether the 
-                    view is in-focus or out-of-focus!
-
-                    <br><br>
-                    </p>
-
-                </section>
-                
-                <section  id="project2" class="bg-white">
-                    <h3>Image Focus Recognition and Classification Neural Network </h3>
-                    <p>
-                        Photographs are used to capture and record detailed still moments of different scenarios, environments or subjects for a wide variety of 
-                        purposes. For example, taking a high quality picture of a large celestial body, like the moon in order to see and study its craters for 
-                        scientific research, to even capturing microscopic images of tiny micro-organisms to study how they interact with their surrounding 
-                        world, to even just capturing a special moment in a person's life, like a wedding, or a vacation. Regardless of the application of the 
-                        images, it is important to capture as much detail as possible, but this detail can be lost when the image is out-of-focus; Not only that, 
-                        it could also render the image unusable. 
-                        
-                        <br><br>
-                        Machine learning has been used in the past not only for binary classification of in- and 
-                        out-of-focus images, but also the classification of different kinds of blur. The goal for this project was to classify images that 
-                        are in-focus and out-of-focus using Neural Networks. This could have useful applications in a camera focusing system, aiding in either 
-                        manually focusing the lens, or having it connected to a motorised focusing system and adjusting focus automatically.
-
-                        <br><br>
-
-                        <p> I've also made a demonstartion of me using the Neural Network in this youtube video!</p><br>
-                        <iframe width="800" height="480" src="https://www.youtube.com/embed/P0aj57Yiu9E?si=6USyJp4LE7JDH7-g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-                        <br><br><br>
-
-
-                        You can read more about this project in my github repo <a href="https://github.com/wallenby/image_focus_recognition_neural_network">HERE</a>!
-                    </p>
-                </section>
-
-                <section  id="project3" class="bg-gray">
-                    <h3>Neural Network Autoencoder for Styling Images</h3>
-                    <p> 
-                        Ever since I started working with A.I. and Neural Networks, I've been fascinated by different projects I could work on using those
-                        tools, and of course, those ideas were related to photographs. Specifically, 35mm and medium format photos. Film photos have a very 
-                        distinct look to them which gives them a special sort of charm, but it's often difficult to duplicate or replicate this look using
-                        digital cameras; They're just not quite the same. This is where my next idea came into play!
-
-                        <br><br>
-
-                        An auto-encoder that uses a Neural Network to try and learn the pattern present in 35mm and Medium Format photos and that can
-                        apply this look to new digital images! This project is still a work in progress and has proven to be more difficult than expected,
-                        mainly due to the computing power needed to run the Neural Network. My current set up doesn't have enough VRAM for the size
-                        of the images that I need to train, which has caused a couple of hiccups along the way when attempting to put this project together.
-
-                        <br><br>
-
-                        This is still a work in progress, but I'm working on it from time to time and will keep posting updates here!
-
-                    
-                    </p>
-                </section>
-
-                <section  id="project4" class="bg-white">
-                    <h3> Raspberry Pi Stacker LED Game </h3>
-                    <p>A Simple Stacker-like game for the Raspberry Pi!
-
-                        <br><br>
-
-                        The game is similar to the arcade game Stacker, but with some changes.
-
-                        There's no visual stacking, the stacking is more so done with points.
-
-                        There are also lives in the game instead of either missing the stack completely, landing the block partly or landing it right in the middle.
-
-                        <br><br>
-                       
-                    </p>
-                    <img src="images/stacker.jpg" alt="stacker!"  class="longer">
-                    <img src="images/stacker.gif" alt="stacker!"  class="longer">
-
-                    <p class="center_p">You can read more about it in my github repo <a href="https://github.com/wallenby/stacker_pi_game">here</a>! </p>
-                </section>
   
+            
 
-        
-        
+                
+                <a href="pi_camera_project.html" id="site-sections-a">
+                <section id="site-sections">
+                
+                    <h3>Pi Camera</h3>
+                    <p>
+                    Breakdown of putting together the custom camera based around the Raspberry Pi
+                    </p>
+                </section><br>
+               
+                </a>
+                
+
+                <a href="image_classification_project.html" id="site-sections-a">
+                <section id="site-sections">
+    
+                    <h3>Image Classification Neural Network</h3>
+                    <p>
+                    A Neural Network that classifies images based on wether they're in focus or not
+                    </p>
+                </section><br>
+                </a>
+                
+                
+                <a href="autoenconder_project.html" id="site-sections-a">
+                <section id="site-sections">
+                    <h3>Autoencoder Neural Network</h3>
+                    <p>
+                    Autoeconder for stylizing images to resemble 35mm or Medium Format film
+                    </p>
+                </section><br>
+                </a>
+
+
+                <a href="LED_pi_game_project.html" id="site-sections-a">
+                  <section id="site-sections">
+                      <h3>LED Pi Game</h3>
+                      <p>
+                      A simple stacker-like game using a Pi Pico, LEDs and a breadboard
+                      </p>
+                  </section>
+                  </a>
+
+        </section>
+
+        <br><br>
+
     </main>
+
 
     <div id="footer"></div>
 
     <script>
-
         fetch('header.html')
         .then(response => response.text())
         .then(data => {
@@ -301,5 +95,6 @@
         })
         .catch(error => console.log('Error loading footer:', error));
     </script>
+
 </body>
 </html>

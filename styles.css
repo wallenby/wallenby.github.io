@@ -18,27 +18,6 @@ body {
 
 
 
-header {
-    background-color: #141414;
-    color: #fff6ea;
-    text-align: center;
-    padding: 1em;
-    box-shadow: 0px 3px 10px rgba(49, 49, 49, 0.2);
-    z-index: 2;  /* Make this higher than the sidebar's z-index */
-    position: relative;  /* Needed for z-index to work */
-
-    width: 100%;
-    z-index: 2; /* Keep it above other content */
-}
-
-header nav ul li a {
-   
-    color: #ffffff;
-    font-size: 115%;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
 
 
 #site-sections{
@@ -182,23 +161,6 @@ h5 {
     padding-bottom: 0px;  /* Space inside the element, to the right of the text */
     padding-top: 20px;  /* Space inside the element, to the right of the text */
 }
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    text-align: center;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav ul li a {
-    color: #333;
-    text-decoration: none;
-}
-
 
 
 
@@ -431,8 +393,8 @@ iframe {
 }
 
 .wide{
-    width: 425px;  /* Sets the width */
-    height: 350px;  /* Sets the height */
+    width: 600px;  /* Sets the width */
+    height: 300px;  /* Sets the height */
 }
 
 
@@ -448,8 +410,13 @@ iframe {
 }
 
 .taller-photo{
-    width: 900px;
+    width: 625px;
     height: 900px;
+}
+
+.big{
+    width: 800px;
+    height: 600px;
 }
 
 .icons{
@@ -459,3 +426,156 @@ iframe {
     margin-left: 5em;
     margin-right: 5em;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+header {
+    background-color: #141414;
+    color: #fff6ea;
+    text-align: center;
+    padding: 1em;
+    box-shadow: 0px 3px 10px rgba(49, 49, 49, 0.2);
+    z-index: 2;  /* Make this higher than the sidebar's z-index */
+    position: relative;  /* Needed for z-index to work */
+
+    width: 100%;
+    z-index: 2; /* Keep it above other content */
+}
+
+header nav ul li a {
+   
+    color: #ffffff;
+    font-size: 115%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+
+
+
+/* 
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+}
+ */
+
+
+
+
+/* Style the nav and list items */
+
+
+
+nav ul {
+    list-style-type: none;
+    
+    display: flex;
+    
+}
+
+nav ul li {
+    position: relative;
+    display: inline;
+    padding: 2;
+}
+
+/* Style for the links */
+nav ul li a {
+    text-decoration: none;
+    padding: 0px 15px 10px 30px;
+    display: block;
+    color: #333;
+    
+    
+    
+}
+
+
+/* Hide the dropdown by default */
+nav ul li .dropdown {
+    display: none;
+    position: absolute;
+    background-color: #141414;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+    
+    padding: 0;
+    margin-top: 15px;
+    margin-bottom: 5px;
+
+  
+    background-color: #f5f5f5b4;
+    backdrop-filter: blur(10px); /* This blurs the background behind the element */
+    -webkit-backdrop-filter: blur(10px); /* Safari support */
+    
+
+    margin-top: 0px;
+    margin-left: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+
+    border-radius: 10px;
+
+    color: #000000;
+}
+
+
+
+
+nav ul li .dropdown li a {
+    font-family: 'Lora', serif;
+    
+    color: #000000;
+    display: block;
+    font-size: medium;
+    font-weight: 400;
+    padding: 7px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+/* Show the dropdown when hovering over the parent */
+nav ul li:hover .dropdown {
+    display: block;
+}
+
+/* Optional: Add some hover effects */
+nav ul li a:hover, nav ul li .dropdown li a:hover {
+    color: #b2b2b2;
+}
+
+/* Optional: Add some hover effects */
+nav ul li .dropdown li a:hover {
+    color: #959595;
+}
+

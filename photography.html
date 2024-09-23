@@ -1,288 +1,92 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Erik's Portfolio</title>
     <link rel="icon" href="images/favicon.png" type="image/png">
+    <title>Erik's Portfolio</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Arsenal&family=Lora&family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Mate:ital@0;1&display=swap" rel="stylesheet"></head>
 
 </head>
-
-
 <body>
-   <div id="header"></div>
+
+    <div id="header"></div>
+
+    <main class="bg-white">
+        <section id="about_me" >
+
+            <br>
+            <h2>Photography</h2>
 
 
-   <main>
-        <br>
-        <h2>Photography</h2>
             <p>I love slowing down and looking at things more deeply through camera lenses. This includes landscapes, scenes, people and even the moon! </p>
             <br><br>
   
+            <p class="short">
+               I've split up this section into different parts to make it easier to navigate. 
+               There's the photos I've taken using the camera I put together using the Raspberry Pi,
+               there's also the Astro-Photography section which includes some nice space photos. There's
+               also the Film Photography section which includes photos which were taken on 35mm film and then
+               there's the digital section which includes photos taken on digital devices.
 
+                <br><br>
+            </p>
+            
 
-            <section id="pi_photography" class="bg-white">
                 
-                <h3>Shot on Pi</h3>
-                <p class="center_p">Below are the pictures I've taken using the Pi Camera that I put together! :)</p>
-                <br> 
- 
-               <div id="slideshow" >
-                  <div class="slide_1">
-                     <img src="images/pi3.jpg" >
-                  </div>
-                  <div class="slide_1">
-                     <img src="images/pi4.jpg" >
-                  </div>
-                  <div class="slide_1">
-                     <img src="images/pi5.jpg" >
-                  </div>
-                  <div class="slide_1">
-                     <img src="images/pi1.jpg" >
-                  </div>
-                  <div class="slide_1">
-                     <img src="images/pi7.jpg" >
-                  </div>
-                  <div class="slide_1">
-                     <img src="images/pi2.jpg" >
-                  </div>
-                  <div class="slide_1">
-                     <img src="images/pi6.jpg" >
-                  </div>
-                  <div class="slide_1">
-                     <img src="images/pi10.jpg" >
-                  </div>
-                  <div class="slide_1">
-                     <img src="images/pi9.jpg" >
-                  </div>
-                  <!-- Add more slides as needed -->
-                  <br>
-                  <a class="prev" onclick="moveSlide_1(-1)">&#10094;</a>
-                  <a class="next" onclick="moveSlide_1(1)">&#10095;</a>
-                  <br>
-               </div>
-
-
-              
-
-               <script src="script_pi_slide.js"></script>
-
+                <a href="pi_photography.html" id="site-sections-a">
+                <section id="site-sections">
+                
+                    <h3>Pi Camera Photos</h3>
+                    <p>
+                     Photos taken on my custom built camera that uses a Raspberry Pi!
+                    </p>
+                </section><br>
                
-
-            </section>
-
-
-
-
-            <section id="photography" class="bg-gray">
+                </a>
                 
-                <h3>Astro-Photography</h3>
-                <p>
-                    Recently I've taken a particular liking to looking up at the night sky and taking everything in. There's so much to see! The most
-                    amazing light show in the universe, and it's free to see! :D AND it happens every night :)
 
-                    <br><br>
-                
-                    
-                    
-                </p>
-                <img src="images/halfmoon.jpg" alt="Moon!" caption="hey" class="large-photo">
-                
-                <img src="images/moon1.jpg" alt="Moon!" caption="hey" class="large-photo">
-                <br>
-                <img src="images/moon2.jpg" alt="Moon!" caption="hey" class="large-photo">
-                
-                <img src="images/jupiter.jpg" alt="Jupiter" class="large-photo">
-                <br>
-                <p id="caption"><i>First Quarter + Waning Gibbous Moon (top)
-                  <br>
-                  Full Moon + Jupiter (bottom)  </i></p>                  
-
-                <br><br>
-
-               <h4> Photos from the eclipse!!</h4>            
-                <img src="images/eclipse1.jpg" alt="Moon!" caption="hey" class="larger-photo">
-                <br>
-                <img src="images/eclipse3.jpg" alt="Moon!" caption="hey" class="large-photo">
-                <img src="images/eclipse4.jpg" alt="Moon!" caption="hey" class="large-photo">
-                <br>
-                <img src="images/eclipse5.jpg" alt="Moon!" caption="hey" class="large-photo">
-                <img src="images/eclipse6.jpg" alt="Moon!" caption="hey" class="large-photo">
-                <br>
-
-            </section>
-            
-
-
-          
-            <section id="film_photography" class="bg-white">
-                
-                <h3>Film Photos!</h3>
-                <p> I love film! So far I've only used 35mm film and I LOVE IT!
-                    So here are some of my favourite photos taken on film, divided into Black & White and Colour </p>
-                <br><br>
-            <h4>Black and White Film</h4>
-             <div id="slideshow" >
-                 <div class="slide_bw">
-                    <img src="images/film1.jpg" >
-                 </div>
-                 <div class="slide_bw">
-                    <img src="images/film2.jpg" >
-                 </div>
-                 <div class="slide_bw">
-                    <img src="images/film3.jpg" >
-                 </div>
-                 <div class="slide_bw">
-                    <img src="images/film4.jpg" >
-                 </div>
-                 <div class="slide_bw">
-                    <img src="images/film5.jpg" >
-                 </div>
-                 <div class="slide_bw">
-                    <img src="images/film6.jpg" >
-                 </div>
-                 <div class="slide_bw">
-                    <img src="images/film7.jpg" >
-                 </div>
-                 <div class="slide_bw">
-                    <img src="images/film8.jpg" >
-                 </div>
-                 <div class="slide_bw">
-                    <img src="images/film9.jpg" >
-                 </div>
-                 <div class="slide_bw">
-                    <img src="images/film10.jpg" >
-                 </div>
-                 <!-- Add more slides as needed -->
-                 <br>
-                 <a class="prev" onclick="moveSlide_2(-1)">&#10094;</a>
-                 <a class="next" onclick="moveSlide_2(1)">&#10095;</a>
-                 <br>
-             </div>
-             <br>
-
-             <h4>Colour Film</h4>
-             <div id="slideshow" >
-                <div class="slide_color">
-                   <img src="images/color_film1.jpg" >
-                </div>
-                <div class="slide_color">
-                   <img src="images/color_film2.jpg" >
-                </div>
-                <div class="slide_color">
-                   <img src="images/color_film3.jpg" >
-                </div>
-                <div class="slide_color">
-                   <img src="images/color_film4.jpg" >
-                </div>
-                <div class="slide_color">
-                   <img src="images/color_film5.jpg" >
-                </div>
-                <div class="slide_color">
-                   <img src="images/color_film6.jpg" >
-                </div>
-                <div class="slide_color">
-                   <img src="images/color_film7.jpg" >
-                </div>
-                <div class="slide_color">
-                   <img src="images/color_film8.jpg" >
-                </div>
-                <div class="slide_color">
-                   <img src="images/color_film9.jpg" >
-                </div>
-                <div class="slide_color">
-                   <img src="images/color_film10.jpg" >
-                </div>
-
-                <div class="slide_color">
-                  <img src="images/color_film11.jpg" >
-               </div>
-               <div class="slide_color">
-                  <img src="images/color_film12.jpg" >
-               </div>
-               <div class="slide_color">
-                  <img src="images/color_film13.jpg" >
-               </div>
-               <div class="slide_color">
-                  <img src="images/color_film14.jpg" >
-               </div>
-               <div class="slide_color">
-                  <img src="images/color_film15.jpg" >
-               </div>
-               <div class="slide_color">
-                  <img src="images/color_film16.jpg" >
-               </div>
-               <div class="slide_color">
-                  <img src="images/color_film17.jpg" >
-               </div>
-               <div class="slide_color">
-                  <img src="images/color_film18.jpg" >
-               </div>
-               <div class="slide_color">
-                  <img src="images/color_film19.jpg" >
-               </div>
-               <div class="slide_color">
-                  <img src="images/color_film20.jpg" >
-               </div>
-               <div class="slide_color">
-                  <img src="images/color_film21.jpg" >
-               </div>
-                <!-- Add more slides as needed -->
-                <br>
-                <a class="prev" onclick="moveSlide_3(-1)">&#10094;</a>
-                <a class="next" onclick="moveSlide_3(1)">&#10095;</a>
-                <br>
-            </div>
-
-             <script src="script_film_bw.js"> </script>
-             <script src="script_film_color.js"> </script>
-            
-            </section>
-
-
-
-            
-            <section id="photography" class="bg-gray">
-
-                <h3>Other-Photography</h3>
+                <a href="astro_photography.html" id="site-sections-a">
+                <section id="site-sections">
     
-               <br> 
-            
+                    <h3>Astro-Photography</h3>
+                    <p>
+                    Photos from the eclipse, the moon, and Jupiter!
+                    </p>
+                </section><br>
+                </a>
                 
                 
-               <br>
-               <img src="images/canal_bridge.jpg" alt="Image 5" class="larger-photo">
-               <br>
-               <img src="images/night_scene.jpg" alt="Image 6" class="larger-photo">
-               <br>
-               <img src="images/old_building.jpg" alt="Image 6" class="larger-photo">
-               <br>
-               <img src="images/building_through_trees.jpg" alt="Image 7" class="tallest">
-               <img src="images/oldie_stairs.jpg" alt="Image 7" class="tallest">
-               <br>
-               <img src="images/photo1.jpg" alt="Image 1">
-               
-               <img src="images/photo2.jpg" alt="Image 2">
-               <br>
-               <img src="images/photo3.jpg" alt="Image 3">
-               <img src="images/photo4.jpg" alt="Image 4">
-        
-
-                    <!-- Add more slides as needed -->
-                  <br>
-                    <br>
-
-                <br>
-                <script src="script.js"></script>
+                <a href="film_photography.html" id="site-sections-a">
+                <section id="site-sections">
+                    <h3>Film Photography</h3>
+                    <p>
+                    35mm film, both black and white and in colour!
+                    </p>
+                </section><br>
+                </a>
 
 
-            </section>
+                <a href="general_photography.html" id="site-sections-a">
+                  <section id="site-sections">
+                      <h3>Digital Photography</h3>
+                      <p>
+                      Photos taken on my DSLR and on my phone! :)
+                      </p>
+                  </section>
+                  </a>
+
+        </section>
+
+        <br><br>
+
     </main>
 
 
     <div id="footer"></div>
+
     <script>
 
         fetch('header.html')
@@ -300,6 +104,33 @@
         })
         .catch(error => console.log('Error loading footer:', error));
     </script>
-    
+
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
