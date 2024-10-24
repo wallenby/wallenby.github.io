@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Erik's Portfolio</title>
+    <link rel="icon" href="images/favicon.png" type="image/png">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arsenal&family=Lora&family=Raleway&display=swap" rel="stylesheet">
+
+</head>
+
+
+
+<body>
+    <div id="header"></div>
+
+
+    <main class="bg-white">
+
+
+                <section  id="project2" class="bg-white">
+                    <h3>Optimal Path finding A.I. </h3>
+                    <p>
+
+                        This project was a test to get my feet wet with some practical applications using 
+                        Artificial Intelligence.
+                        The task is (relatively) simple: There's a simulated warehouse environment with 
+                        agents who's function is to acquire items from a shelf and deliver them to a drop
+                        off location. There's a starting/resting location and the agents need to be as 
+                        efficient as possible in acquiring their item.
+
+                        <br><br>
+
+                        <img src="images/Erik's Warehouse Angle.png" class="big">
+
+                        
+                        
+                        <br><br>
+                        Why is efficiency necessary? 
+                         
+                        <br><br>
+                        Maximizing efficiency will insure that the items are being moved as ideally as 
+                        possible, minimizing energy consumption from the agents and also time needed 
+                        to have everything moved to the designated area. If the warehouse is being 
+                        accessed rapidly and multiple items need to be moved for transportation, then 
+                        having the agents stumble around and wasting time isn't going to be beneficial 
+                        to the owners of the warehouse.
+
+                        <br><br>
+
+                        The project was divided into 4 different scenarios:
+                        <br>
+                        &nbsp; - 1 agent<br>
+                        &nbsp; - 2 agents<br>
+                        &nbsp; - 3 agents<br>
+                        &nbsp; - 3 agents with "random" starting/resting positions
+
+                        <br><br>
+                        Where each agent has a designated shelf to access in the warehouse where they need to pick up their items to deliver them to the designated drop off location. The drop off location would be a simulated area where the items would then be loaded into a transport vehicle of some sort.
+                        
+
+                        <br><br>
+
+                     
+
+                         <img src="images/Erik's Warehouse top.png" class="big">
+
+                        <br><br>
+                        Furthermore, when there are multiple agents running around in the warehouse, they can't be running into each other.
+
+
+                         <br><br>
+
+                         For more information and the actually files and code, visit the GitHub repo for 
+                         the project <a href=" https://github.com/wallenby/ai_project/tree/main">HERE</a>!
+
+                        
+
+                    </p>
+                </section>
+
+        
+
+        
+        
+    </main>
+
+    <div id="footer"></div>
+
+    <script>
+
+        fetch('header.html')
+        .then(response => response.text())
+        .then(data => {
+        document.getElementById("header").innerHTML = data;
+        })
+        .catch(error => console.log('Error loading header:', error));
+
+
+        fetch('footer.html')
+        .then(response => response.text())
+        .then(data => {
+        document.getElementById("footer").innerHTML = data;
+        })
+        .catch(error => console.log('Error loading footer:', error));
+    </script>
+</body>
+</html>
